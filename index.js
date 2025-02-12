@@ -4,8 +4,11 @@ const app=express();
 
 app.get('/',(req,res)=>{
     res.send("SERVER RUNNING")
-}
-)
+})
+
+app.get('/user',(req,res)=>{
+    res.send("USER API")
+})
 
 
 app.listen(PORT,()=>{
